@@ -8,5 +8,5 @@ if test -z "$str1"; then
   echo "$(date +'%Y%m%d %T') $HOST is down"
 else
   str2="${str1#*time=}"
-  echo "$(date +'%Y%m%d %T') $HOST is $str2" 
+  echo "$(date +'%Y%m%d %T') $HOST is $str2"
 fi
