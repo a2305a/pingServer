@@ -11,7 +11,7 @@ do
   else
     str2="${str1#*time=}"
     echo "$(date +'%Y%m%d %T') $HOST $str2" >> "/root/src/pingServer/log/"$date1"_sbf01.log"
-    sleep 1
   fi
+  sleep 1
   x=$(($x+1))
 done
