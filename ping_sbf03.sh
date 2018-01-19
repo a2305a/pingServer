@@ -3,7 +3,7 @@
 date1=$(date +%Y%m%d)
 x=1
 HOST="10.168.5.166"
-while [ "${x}" != "8400" ]
+while [ "${x}" != "25200" ]
 do
   str1=$(ping -c 1 -n -W 3 $HOST | grep 'time=' | awk '{ print $7 }')
   if test -z "$str1"; then
